@@ -1,0 +1,27 @@
+
+Falta:
+Foto  
+hacer el cv para linkear
+
+experiencia!
+Formación.
+
+//-------------------------------------------------------------
+//-------------------------------------------------------------
+//-------------------------------------------------------------
+
+//-------------------------------------------------------------
+4
+Experiencia laboral destacada
+Puesto, empresa, fechas
+2-3 logros medibles por rol (ej. mejoras en KPIs, proyectos entregados)
+
+//-------------------------------------------------------------
+5
+Emprendimientos & proyectos propios
+KOAN Juegos de Mesa
+“La ruta del Nómade” (plataforma turística)
+Otros side-projects o hackathons relevantes
+
+hacer dos cards con foto y nada mas y un boton que al aprentar abra un modal y ahi escribo.
+//-------------------------------------------------------------

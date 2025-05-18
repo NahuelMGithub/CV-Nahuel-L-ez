@@ -1,0 +1,69 @@
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-title {
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+}
+
+main h2{
+    text-align: center;
+}
+
+.imagen {
+  width: 100%;     
+  max-height: 200px;
+  object-fit: cover; 
+
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+
+
+.encabezado-container {
+  
+  background-image: url("img/fondo2.png");
+  background-size: cover;
+  background-position: center;
+  padding: 30px 0;
+  color: white;
+  text-shadow:
+    -1px -1px 0 black,  
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black; /* Sombras en las 4 direcciones */
+
+}
+
+.encabezado-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.encabezado-izq,
+.encabezado-centro,
+.encabezado-der {
+  flex: 1 1 300px;
+  margin: 10px;
+}
+
+.foto-perfil {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+}
