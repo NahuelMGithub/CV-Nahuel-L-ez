@@ -67,3 +67,9 @@ main h2{
   border-radius: 50%;
   border: 3px solid white;
 }
+
+.carousel-item img {
+    max-height: 400px;
+    object-fit: cover;
+    width: auto;
+}

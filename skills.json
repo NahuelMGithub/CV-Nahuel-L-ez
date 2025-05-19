@@ -18,10 +18,13 @@
     { "descripcion": "Podio – Julasoft" },
     { "descripcion": "Google Sheets – Julasoft / Automatización de tareas" },
     { "descripcion": "OKR y KPY – Julasoft / Automatización de tareas" },
-    { "descripcion": "SCRUM – Julasoft / Automatización de tareas" }
+    { "descripcion": "SCRUM – Julasoft / Automatización de tareas" },
+    { "descripcion": "microsoft office – Autodidacta" }
   ],
   "habilidadesBlandas": [
     { "descripcion": "Liderazgo – KOAN / Julasoft como Product Owner" },
+    { "descripcion": "Comunicación efectiva – KOAN / Julasoft como Product Owner" },
+    { "descripcion": "Ventas – KOAN / Julasoft como Product Owner" },
     { "descripcion": "Trabajo en equipo – KOAN / Julasoft / Alertatel" },
     { "descripcion": "Resiliencia – Emprendimiento personal y adaptación profesional" },
     { "descripcion": "Creatividad – KOAN / Desarrollo de juegos de mesa" }

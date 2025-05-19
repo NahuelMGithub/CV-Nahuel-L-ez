@@ -1,0 +1,17 @@
+[
+  {
+    "nombre": "Viajes",
+    "foto": "img/intereses/viajes.jpg",
+    "descripcion": "Mi sueño es viajar en un motorhome. Amo conocer lugares nuevos, paisajes y gente"
+  },
+  {
+    "nombre": "Deportes",
+    "foto": "img/intereses/deportes.jpg",
+    "descripcion": "Amo el deporte, actividades al aire libre. Salir a corre y varios deportes. Pasión por la selección Argentina"
+  },
+  {
+    "nombre": "Juegos de Mesa",
+    "foto": "img/intereses/juegos_de_mesa.jpg",
+    "descripcion": "Disfrutar del diseño, la estrategia y la creatividad que ofrecen los juegos de autor. Todo eso lo puedo lograr en mi emprendimiento KOAN Juegos de mesa"
+  }
+]

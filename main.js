@@ -104,3 +104,88 @@ document.addEventListener("DOMContentLoaded", async () => {
   });
 });
 
+//---------------------------------------------- Interedes
+
+document.addEventListener("DOMContentLoaded", () => {
+    fetch('intereses.json')
+        .then(response => response.json())
+        .then(data => {
+            const carouselInner = document.getElementById('carousel-inner');
+            const modalesContainer = document.getElementById('modales-intereses');
+
+            data.forEach((interes, index) => {
+                const { nombre, foto, descripcion } = interes;
+                const id = nombre.toLowerCase().replace(/\s+/g, '-');
+
+                // Crear slide del carrusel
+                const slide = document.createElement('div');
+                slide.className = `carousel-item${index === 0 ? ' active' : ''}`;
+                slide.innerHTML = `
+                    <div class="d-flex flex-column align-items-center text-center">
+                        <h3 class="mt-4">${nombre}</h3>
+                        <img src="${foto}" class="d-block w-75 rounded shadow" alt="${nombre}">
+                        <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#modal-${id}">
+                            Ver más
+                        </button>
+                    </div>
+                `;
+                carouselInner.appendChild(slide);
+
+                // Crear modal
+                const modal = document.createElement('div');
+                modal.className = 'modal fade';
+                modal.id = `modal-${id}`;
+                modal.tabIndex = -1;
+                modal.setAttribute('aria-labelledby', `modalLabel-${id}`);
+                modal.setAttribute('aria-hidden', 'true');
+                modal.innerHTML = `
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalLabel-${id}">${nombre}</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                            </div>
+                            <div class="modal-body">
+                                ${descripcion}
+                            </div>
+                        </div>
+                    </div>
+                `;
+                modalesContainer.appendChild(modal);
+            });
+        })
+        .catch(error => {
+            console.error("Error cargando intereses.json:", error);
+        });
+});
+
+//---------------------------------------- Experiencia
+
+fetch('experiencia.json')
+    .then(response => response.json())
+    .then(data => {
+        const experienciaContainer = document.getElementById('experiencia-container');
+
+        data.forEach(exp => {
+            const { empresa, puesto, descripcion, anioInicio, anioFin } = exp;
+
+            const tarjeta = document.createElement('div');
+            tarjeta.className = 'col-md-6';
+            tarjeta.innerHTML = `
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">${empresa}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">${puesto}</h6>
+                        <p class="card-text">${descripcion}</p>
+                        <p class="text-end text-muted small">
+                            ${anioInicio}${anioFin ? ' – ' + anioFin : ' – Presente'}
+                        </p>
+                    </div>
+                </div>
+            `;
+            experienciaContainer.appendChild(tarjeta);
+        });
+    })
+    .catch(error => {
+        console.error("Error cargando experiencia.json:", error);
+    });
