@@ -10,8 +10,13 @@
     "descripcion": "Amo el deporte, actividades al aire libre. Salir a corre y varios deportes. Pasión por la selección Argentina"
   },
   {
+    "nombre": "Anime",
+    "foto": "img/intereses/anime.jpg",
+    "descripcion": "Me encantan las pelis de anime, principalmente las de estudios Ghibli"
+  },
+  {
     "nombre": "Juegos de Mesa",
-    "foto": "img/intereses/juegos_de_mesa.jpg",
+    "foto": "img/ntereses/juegos_de_mesa.jpg",
     "descripcion": "Disfrutar del diseño, la estrategia y la creatividad que ofrecen los juegos de autor. Todo eso lo puedo lograr en mi emprendimiento KOAN Juegos de mesa"
   }
 ]
