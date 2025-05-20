@@ -9,6 +9,7 @@
     "foto": "img/intereses/deportes.jpg",
     "descripcion": "Amo el deporte, actividades al aire libre. Salir a corre y varios deportes. Pasión por la selección Argentina"
   },
+ 
   {
     "nombre": "Anime",
     "foto": "img/intereses/anime.jpg",
@@ -16,7 +17,7 @@
   },
   {
     "nombre": "Juegos de Mesa",
-    "foto": "img/ntereses/juegos_de_mesa.jpg",
+    "foto": "img/intereses/juegosdemesa.jpg",
     "descripcion": "Disfrutar del diseño, la estrategia y la creatividad que ofrecen los juegos de autor. Todo eso lo puedo lograr en mi emprendimiento KOAN Juegos de mesa"
   }
 ]
