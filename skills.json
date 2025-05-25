@@ -5,14 +5,14 @@
     { "descripcion": "Product Ownership – Julasoft / Alertatel" },
     { "descripcion": "HTML – Cursos de Youtube, Autodidacta, Cursos Online" },
     { "descripcion": "CSS – Cursos de Youtube, Autodidacta, Cursos Online" },
-    { "descripcion": "bootstrap – Cursos de Youtube, Autodidacta, Cursos Online" },
+    { "descripcion": "Bootstrap – Cursos de Youtube, Autodidacta, Cursos Online" },
     { "descripcion": "JavaScript – Cursos de Youtube, Autodidacta, Cursos Online" },
     { "descripcion": "React – Cursos Online" }
   ],
   "herramientas": [
-    { "descripcion": "Visual Studio Code – Uso diario en proyectos propios y laborales" },
-    { "descripcion": "Bitrix – Julasoft" },
     { "descripcion": "OKR y KPY – Julasoft / Automatización de tareas" },
+    { "descripcion": "Bitrix – Julasoft" },
+    { "descripcion": "Visual Studio Code – Uso diario en proyectos propios y laborales" },
     { "descripcion": "Figma – Cursos Online" },
     { "descripcion": "Asana – Julasoft" },
     { "descripcion": "Trello – Julasoft" },
