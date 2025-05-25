@@ -1,32 +1,32 @@
 {
   "tecnicas": [
-    { "descripcion": "HTML – Cursos de youtube, Autodidacta, Coderhouse" },
-    { "descripcion": "CSS – Cursos de youtube, Autodidacta, Coderhouse" },
-    { "descripcion": "bootstrap – Cursos de youtube, Autodidacta, Coderhouse" },
-    { "descripcion": "JavaScript – Cursos de youtube, Autodidacta, Coderhouse" },
-    { "descripcion": "React – Coderhouse" },
     { "descripcion": "Base de datos SQL – Julasoft / Automatización de tareas" },
+    { "descripcion": "Gestión de proyectos – Julasoft / Alertatel" },
     { "descripcion": "Product Ownership – Julasoft / Alertatel" },
-    { "descripcion": "Gestión de proyectos – Julasoft / Alertatel" }
+    { "descripcion": "HTML – Cursos de Youtube, Autodidacta, Cursos Online" },
+    { "descripcion": "CSS – Cursos de Youtube, Autodidacta, Cursos Online" },
+    { "descripcion": "bootstrap – Cursos de Youtube, Autodidacta, Cursos Online" },
+    { "descripcion": "JavaScript – Cursos de Youtube, Autodidacta, Cursos Online" },
+    { "descripcion": "React – Cursos Online" }
   ],
   "herramientas": [
     { "descripcion": "Visual Studio Code – Uso diario en proyectos propios y laborales" },
     { "descripcion": "Bitrix – Julasoft" },
-    { "descripcion": "Figma – Coderhouse" },
+    { "descripcion": "OKR y KPY – Julasoft / Automatización de tareas" },
+    { "descripcion": "Figma – Cursos Online" },
     { "descripcion": "Asana – Julasoft" },
     { "descripcion": "Trello – Julasoft" },
     { "descripcion": "Podio – Julasoft" },
     { "descripcion": "Google Sheets – Julasoft / Automatización de tareas" },
-    { "descripcion": "OKR y KPY – Julasoft / Automatización de tareas" },
     { "descripcion": "SCRUM – Julasoft / Automatización de tareas" },
-    { "descripcion": "microsoft office – Autodidacta" }
+    { "descripcion": "Microsoft Office – Autodidacta" }
   ],
   "habilidadesBlandas": [
     { "descripcion": "Liderazgo – KOAN / Julasoft como Product Owner" },
+    { "descripcion": "Creatividad – KOAN / Desarrollo de juegos de mesa" },
     { "descripcion": "Comunicación efectiva – KOAN / Julasoft como Product Owner" },
     { "descripcion": "Ventas – KOAN / Julasoft como Product Owner" },
     { "descripcion": "Trabajo en equipo – KOAN / Julasoft / Alertatel" },
-    { "descripcion": "Resiliencia – Emprendimiento personal y adaptación profesional" },
-    { "descripcion": "Creatividad – KOAN / Desarrollo de juegos de mesa" }
+    { "descripcion": "Resiliencia – Emprendimiento personal y adaptación profesional" }
   ]
 }

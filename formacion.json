@@ -1,18 +1,18 @@
 {
   "formacionAcademica": [
-    { "descripcion": "Lic. Bioinformátics - 2 año UNQ" },
+    { "descripcion": "Lic. Bioinformática - 2 años UNQ" },
     { "descripcion": "Medicinca - 3 años UNLP" },
     { "descripcion": "Lic. Física Médica - 1 año UNLP" },
     { "descripcion": "Lic. Filosofía - 1 año UNMDP" }
   ],
   "cursos": [
-    { "descripcion": "Product Manager - Coderhouse" },
-    { "descripcion": "Back - Coderhouse" },
-    { "descripcion": "React - Coderhouse" },
-    { "descripcion": "Desarrollo web - Coderhouse" },
-    { "descripcion": "Java Script - Coderhouse" },
-    { "descripcion": "Flutter con Dart - Udemy" },
-    { "descripcion": "Robótica en Arduino - Coderhouse" },
-    { "descripcion": "Desarrollo de Videojuegos en Unity - Funiversity" }
+    { "descripcion": "Product Manager" },
+    { "descripcion": "Back" },
+    { "descripcion": "React" },
+    { "descripcion": "Desarrollo web" },
+    { "descripcion": "Java Script" },
+    { "descripcion": "Flutter con Dart" },
+    { "descripcion": "Robótica en Arduino" },
+    { "descripcion": "Desarrollo de Videojuegos en Unity" }
   ]
 }

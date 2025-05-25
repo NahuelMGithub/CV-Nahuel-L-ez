@@ -1,48 +1,47 @@
 
-// Si usas módulos ES, pon type="module"
 document.addEventListener("DOMContentLoaded", async () => {
-  // 1) Localiza la sección
   const contenedor = document.getElementById("listas-formacion");
   if (!contenedor) return;
 
   try {
-    // 2) Trae los datos
-    const res = await fetch("formacion.json");   // ← cambia la ruta si hace falta
+    const res = await fetch("formacion.json");
     const datos = await res.json();
 
-    // 3) Crea las dos columnas (col-12 en mobile, col-md-6 en desktop)
     const crearColumna = (titulo, items) => {
       const col = document.createElement("div");
-      col.className = "col-12 col-md-6 mb-4";
+      col.className = "col-12 col-md-6 fade-in";
 
-      // encabezado de la lista
+      const card = document.createElement("div");
+      card.className = "card-formacion";
+
       const h3 = document.createElement("h3");
       h3.textContent = titulo;
-      h3.className = "h5 mb-3";
-      col.appendChild(h3);
+      card.appendChild(h3);
 
-      // lista
       const ul = document.createElement("ul");
       items.forEach(({ descripcion }) => {
         const li = document.createElement("li");
         li.textContent = descripcion;
         ul.appendChild(li);
       });
-      col.appendChild(ul);
+      card.appendChild(ul);
+      col.appendChild(card);
 
       return col;
     };
 
-    // 4) Vacía lo que hubiera antes (opcional)
     contenedor.innerHTML = "";
 
-    // 5) Inserta las columnas
-    contenedor.appendChild(
-      crearColumna("Formación académica", datos.formacionAcademica || [])
-    );
-    contenedor.appendChild(
-      crearColumna("Cursos", datos.cursos || [])
-    );
+    const col1 = crearColumna("Formación académica", datos.formacionAcademica || []);
+    const col2 = crearColumna("Cursos", datos.cursos || []);
+
+    contenedor.appendChild(col1);
+    contenedor.appendChild(col2);
+
+    // Activar animación
+    setTimeout(() => {
+      document.querySelectorAll(".fade-in").forEach(el => el.classList.add("show"));
+    }, 100);
 
   } catch (err) {
     console.error("No pude cargar los datos de formación:", err);
@@ -67,6 +66,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   ];
 
   categorias.forEach(cat => {
+    const listaPreview = data[cat.key]?.slice(0, 3) || [];
+
+    // Crear ul con 3 elementos
+    const ulHTML = listaPreview.map(item => `<li>${item.descripcion}</li>`).join("");
+
     // Crear card
     const col = document.createElement("div");
     col.className = "col-md-4";
@@ -75,7 +79,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         <img src="${cat.imagen}" class="card-img-top imagen" alt="${cat.titulo}">
         <div class="card-body text-center">
           <h3 class="card-title">${cat.titulo}</h3>
-          <button class="btn btn-primary" data-key="${cat.key}">Ver más</button>
+          <ul class="text-start">${ulHTML}</ul>
+          <button class="btn btn-primary mt-3" data-key="${cat.key}">Ver más</button>
         </div>
       </div>
     `;
@@ -103,6 +108,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   });
 });
+
 
 //---------------------------------------------- Interedes
 
@@ -174,8 +180,8 @@ fetch('experiencia.json')
             tarjeta.innerHTML = `
                 <div class="card h-100 shadow-sm">
                     <div class="card-body">
-                        <h5 class="card-title">${empresa}</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">${puesto}</h6>
+                    <h5 class="card-title">${puesto}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">${empresa}</h6>
                         <p class="card-text">${descripcion}</p>
                         <p class="text-end text-muted small">
                             ${anioInicio}${anioFin ? ' – ' + anioFin : ' – Presente'}

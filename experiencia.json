@@ -1,18 +1,19 @@
 [
     {
-        "empresa": "Julasoft",
-        "puesto": "Product Owner",
-        "descripcion": "Trabajo hace 3 años liderando el desarrollo de Alertatel, una plataforma de seguridad ciudadana para municipios. Coordino equipos técnicos,entrevisto usuarios y defino prioridades de producto.",
-        "anioInicio": 2022,
-        "anioFin": null
-    },
-    {
         "empresa": "KOAN Juegos",
         "puesto": "Cofundador y creativo",
         "descripcion": "Soy cofundador de KOAN, una editorial argentina que crea y comercializa juegos de mesa originales. Me enfoco en diseño de producto, testeo y dirección creativa.",
         "anioInicio": 2022,
         "anioFin": null
     },
+    {
+        "empresa": "Julasoft",
+        "puesto": "Product Owner",
+        "descripcion": "Trabajo hace 3 años liderando el desarrollo de Alertatel, una plataforma de seguridad ciudadana para municipios. Coordino equipos técnicos,entrevisto usuarios y defino prioridades de producto.",
+        "anioInicio": 2022,
+        "anioFin": null
+    },
+    
     {
         "empresa": "Policía Científica – Patología Forense",
         "puesto": "Analista de datos e informática",

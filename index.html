@@ -4,7 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Nahuel López</title>
+<title>Nahuel López – Product Owner | Desarrollador Web | Emprendedor</title>
+
+  <!-- META PRINCIPALES PARA IA Y SEO -->
+  <meta name="description" content="CV Web de Nahuel López. Product Owner, desarrollador web y emprendedor con experiencia en tecnología, negocios digitales e innovación. Disponible para trabajo remoto.">
+  <meta name="author" content="Nahuel López">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="CV, Nahuel López, Product Owner, desarrollador web, emprendedor, trabajo remoto, tecnología, proyectos digitales, software, innovación">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -74,32 +81,47 @@
         </section>
 
         <!-- Sección Perfil -->
-        <section class="container my-5 impar" id="perfil">
-            <h2 class="mb-4">Perfil</h2>
-            <p>Product Owner con más de 3 años de experiencia liderando productos digitales en entornos ágiles. Sólido
-                background en atención al cliente, liderazgo de equipos, desarrollo frontend y pensamiento estratégico
-                orientado a la mejora continua. Fundador de una empresa de juegos de mesa, con enfoque creativo,
-                empático y orientado a resultados. Apasionado por la innovación, la tecnología y la optimización de
-                procesos.</p>
+        <section class="container my-5 impar perfil-objetivo">
+            <div id="perfil">
+                <h2 class="mb-4">Perfil</h2>
+                <p>Product Owner con más de 3 años de experiencia liderando productos digitales en entornos ágiles.
+                    Sólido background en atención al cliente, liderazgo de equipos, desarrollo frontend y pensamiento
+                    estratégico orientado a la mejora continua. Fundador de <a href="https://www.instagram.com/koan.juegos/">KOAN</a> una empresa de juegos de mesa, con
+                    mentalidad creativa, empática y orientada a resultados. Apasionado por la innovación, la tecnología
+                    y la optimización de procesos. Con visión integral del negocio y habilidades para conectar
+                    necesidades de usuarios, equipos y objetivos estratégicos. Enfocado en generar impacto positivo y
+                    valor continuo.</p>
+
+            </div>
+            <div id="objetivo">
+                <h2 class="mb-4">Objetivo</h2>
+                <p>Busco desarrollarme como Product Manager o Product Owner en tecnología, combinando experiencia en
+                    producto, visión estratégica y habilidades interpersonales. Mi objetivo es liderar equipos
+                    multidisciplinarios, construir soluciones centradas en el usuario y generar impacto en proyectos
+                    innovadores. Aspiro a trabajar 100% remoto en un entorno flexible que me permita crecer
+                    profesionalmente y, a la vez, vivir viajando en motorhome mientras trabajo desde cualquier lugar del
+                    mundo.</p>
+            </div>
+
         </section>
-        <!-- Sección Objetivo -->
-        <section class="container my-5" id="objetivo">
-            <h2 class="mb-4">Objetivo</h2>
-            <p>Busco desarrollarme como Product Manager o Product Owner en el área de tecnología, combinando mi
-                experiencia en producto, visión estratégica y habilidades interpersonales. Mi objetivo es liderar
-                equipos multidisciplinarios, construir soluciones centradas en el usuario y generar impacto real en
-                proyectos digitales innovadores.
-                Aspiro a desempeñarme 100% en forma remota, en un entorno flexible y colaborativo, que me permita
-                compatibilizar mi crecimiento profesional con mi proyecto de vida: viajar en motorhome mientras trabajo
-                desde cualquier lugar del mundo</p>
+
+
+        <!-- Sección Habilidades -->
+        <section class="container my-5" id="habilidades">
+            <h2 class="mb-4">Habilidades</h2>
+            <div class="row g-4" id="habilidades-cards-container">
+                <!-- Las 3 cards se insertarán desde JavaScript -->
+            </div>
         </section>
-<!-- Sección Experiencia -->
-<section class="container my-5" id="experiencia">
-    <h2 class="mb-4">Experiencia</h2>
-    <div class="row g-4" id="experiencia-container">
-        <!-- JS insertará las tarjetas acá -->
-    </div>
-</section>
+        
+        </section>
+        <!-- Sección Experiencia -->
+        <section class="container my-5" id="experiencia">
+            <h2 class="mb-4">Experiencia</h2>
+            <div class="row g-4" id="experiencia-container">
+                <!-- JS insertará las tarjetas acá -->
+            </div>
+        </section>
 
 
 
@@ -112,13 +134,6 @@
         </section>
 
 
-        <!-- Sección Habilidades -->
-        <section class="container my-5" id="habilidades">
-            <h2 class="mb-4">Habilidades</h2>
-            <div class="row g-4" id="habilidades-cards-container">
-                <!-- Las 3 cards se insertarán desde JavaScript -->
-            </div>
-        </section>
 
         <!-- Modal -->
         <div class="modal fade" id="habilidadesModal" tabindex="-1" aria-labelledby="habilidadesModalLabel"
@@ -136,30 +151,32 @@
             </div>
         </div>
 
-<!-- Sección Intereses personales -->
-<section class="container my-5" id="intereses">
-    <h2 class="mb-4">Intereses personales</h2>
+        <!-- Sección Intereses personales -->
+        <section class="container my-5" id="intereses">
+            <h2 class="mb-4">Intereses personales</h2>
 
-    <!-- Carrusel dinámico -->
-    <div id="interesesCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner" id="carousel-inner">
-            <!-- Slides generados dinámicamente -->
+            <!-- Carrusel dinámico -->
+            <div id="interesesCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" id="carousel-inner">
+                    <!-- Slides generados dinámicamente -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#interesesCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#interesesCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Contenedor de modales -->
+        <div id="modales-intereses">
+            <!-- Modales generados dinámicamente -->
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#interesesCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#interesesCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-        </button>
-    </div>
-</section>
-
-<!-- Contenedor de modales -->
-<div id="modales-intereses">
-    <!-- Modales generados dinámicamente -->
-</div>
 
 
         <!-- Sección Contacto -->

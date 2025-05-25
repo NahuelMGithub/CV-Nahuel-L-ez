@@ -68,8 +68,88 @@ main h2{
   border: 3px solid white;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* fondo para que se vean sobre imágenes claras */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-size: 70% 70%;
+}
+
+
 .carousel-item img {
     max-height: 400px;
     object-fit: cover;
     width: auto;
+}
+
+.perfil-objetivo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.perfil-objetivo > div {
+  flex: 1 1 45%;
+  box-sizing: border-box;
+}
+
+/* Responsive: cuando la pantalla es chica, se apilan */
+@media (max-width: 768px) {
+  .perfil-objetivo {
+    flex-direction: column;
+  }
+
+  .perfil-objetivo > div {
+    flex: 1 1 100%;
+  }
+}
+
+
+
+
+
+/*Formacion */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-formacion {
+  border: 1px solid #e0e0e0;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  height: 100%;
+}
+
+.card-formacion h3 {
+  border-left: 4px solid #0d6efd;
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.card-formacion ul {
+  padding-left: 1rem;
+  list-style: none;
+  margin: 0;
+}
+
+.card-formacion li::before {
+  content: "🎓";
+  margin-right: 0.5rem;
+}
+
+.card-formacion li {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
 }
